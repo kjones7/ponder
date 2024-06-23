@@ -28,6 +28,7 @@ services:
     volumes:
       - ./pwa:/srv/app
       - /srv/app/node_modules
+      - /srv/app/.next
     environment:
       API_PLATFORM_CREATE_CLIENT_ENTRYPOINT: http://php
       API_PLATFORM_CREATE_CLIENT_OUTPUT: .
